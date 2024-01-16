@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Cadastro</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+
+
+<body>
+    <form action="cadastro.php" method="post">
+         <fieldset class="grupo_01">
+           <legend  id="titulo">Cadastro</legend>
+           
+          <label for="nome">Nome</label>
+          <input type="text"name="nome" id="nome" value=""><br><br>
+
+          <label for="datanascimento">Data de Nascimento</label>
+          <input type="date" name="datanascimento" id="datanascimento" value=""><br><br>
+
+          <label for="estadocivil">Estado Civil</label>
+
+                 <select name="estadocivil" id="estadocivil"> 
+
+                      <option value="Selecione">Selecione</option>
+                      <option value="casado">Casado(a)</option>
+                      <option value="solteiro">Solteiro(a)</option>
+
+        </select>
+
+         </fieldset><br>
+             
+          <fieldset class="grupo_02">
+              
+               <legend id="titulo">Endereço</legend>
+
+         <label for="cep">CEP</label>
+         <input type="number" name="cep" id="cep" value=""><br><br>
+
+         <label for="rua">Rua</label>
+         <input type="text" name="rua" id="rua" value=""> 
+        
+         <label for="bairro">Bairro</label>
+         <input type="text" name="bairro" id="bairro" value=""><br><br>
+
+         <label for="complemento">Complemento</label>
+         <input type="text" name="complemento" id="complemento" value=""><br><br>
+
+         <label for="cidade">Cidade</label>
+         <input type="text" name="cidade" id="cidade" value=""><br><br>
+
+        <label for="estado">Estado</label>
+
+        <select name="estado" id="estado">
+
+            <option value="selecione">Selecione</option>
+            <option value="Acre">Acre</option>
+            <option value="Alagoas">Alagoas</option>
+            <option value="Amapa">Amapa</option>
+            <option value="Amazonas">Amazonas</option>
+            <option value="Bahia">Bahia</option>
+            <option value="Ceara">Ceara</option>
+            <option value="Distrito Federal">Distrito Federal</option>
+            <option value="Espirito Santo">Espirito Santo</option>
+            <option value="Goias">Goias</option>
+            <option value="Maranhao">Maranhao</option>
+            <option value="Mato Grosso">Mato Grosso"</option>
+            <option value="Mato Grosso do Sul">Mato Grosso do Sul</option>
+            <option value="Minas Gerais">Minas Gerais</option>
+            <option value="Para">Pará</option>
+            <option value="Paraiba">Paraíba</option>
+            <option value="Parana">Parana</option>
+            <option value="Pernambuco">Pernambuco</option>
+            <option value="Piaui">Piauí</option>
+            <option value="Rio de Janeiro">Rio de Janeiro</option>
+            <option value="Rio Grande do Norte">Rio Grande do Norte</option>
+            <option value="Rio Grande do Sul">Rio Grande do Sul</option>
+            <option value="Rondonia">Rondônia</option>
+            <option value="Roraima">Roraima</option>
+            <option value="Santa Catarina">Santa Catarina</option>
+            <option value="Sao Paulo">São Paulo</option>
+            <option value="Sergipe">Sergipe</option>
+            <option value="Tocantins">Tocantis</option>
+         
+        </select>
+        </fieldset>
+
+        <button id="butao" type="submit" value="cadastar">Cadastrar</button>
+    
+        </form>
+
+</body>
+</html>
